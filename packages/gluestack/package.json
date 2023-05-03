@@ -1,0 +1,49 @@
+{
+  "name": "gluestack-ds-lib",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "@legendapp/tools": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@dank-style/animation-plugin": "latest",
+    "@dank-style/react": "latest",
+    "@gluestack-ui/provider": "latest",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-native": "^0.71.6",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "gluestack-ui": "latest",
+    "react-native": "^0.70.7",
+    "react-native-web": "^0.18.12",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@dank-style/animation-plugin": "latest",
+    "@dank-style/react": "latest",
+    "@gluestack-ui/alert": "latest",
+    "@gluestack-ui/button": "latest",
+    "@gluestack-ui/icon": "latest",
+    "@gluestack-ui/provider": "latest",
+    "react-native-svg": "latest"
+  }
+}
