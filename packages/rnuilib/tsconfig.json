@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
+    "rootDir": "src",
     "outDir": "dist",
     "module": "esnext",
     "lib": ["DOM", "ESNext", "DOM.Iterable"],
     "skipLibCheck": true,
     "importHelpers": true,
     "sourceMap": true,
-    "strict": false,
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
@@ -16,7 +16,7 @@
     "jsx": "react",
     "allowJs": false,
     "esModuleInterop": true,
-    "baseUrl": "."
+    "baseUrl": "src"
   },
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"]
 }

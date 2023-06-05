@@ -8,19 +8,13 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths(), dts()],
   build: {
     lib: {
-      name: "nativebase-ds-lib",
+      name: "rnuilib-ds-lib",
       entry: {
         index: resolve(__dirname, "src/index.ts"),
       },
     },
     rollupOptions: {
-      external: [
-        "react",
-        "react/jsx-runtime",
-        "react-native",
-        "react-native-safe-area-context",
-        "react-native-svg",
-      ],
+      external: ["react", "react/jsx-runtime", "react-native"],
     },
   },
 });

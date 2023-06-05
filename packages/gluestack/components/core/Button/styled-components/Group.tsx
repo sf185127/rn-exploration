@@ -1,5 +1,5 @@
-import { styled } from '../../styled';
-import { View } from 'react-native';
+import { styled } from "../../styled";
+import { View } from "react-native";
 
 export default styled(
   View,
@@ -8,92 +8,112 @@ export default styled(
       size: {
         xs: {
           _button: {
-            px: '$3',
-            py: '$2',
+            px: "$3.5",
+            h: "$8",
             _icon: {
-              h: 12,
-              w: 12,
+              h: "$3",
+              w: "$3",
             },
             _text: {
-              fontSize: '$xs',
-              lineHeight: '$xs',
+              fontSize: "$xs",
+              lineHeight: "$sm",
             },
           },
           _groupHSpacer: {
-            size: 'xs',
+            size: "$xs",
           },
           _groupVSpacer: {
-            size: 'xs',
+            size: "$xs",
           },
         },
         sm: {
           _button: {
-            px: '$3.5',
-            py: '$2',
+            px: "$4",
+            h: "$9",
             _icon: {
-              h: 16,
-              w: 16,
+              h: "$4",
+              w: "$4",
             },
             _text: {
-              fontSize: '$sm',
-              lineHeight: '$sm',
+              fontSize: "$sm",
+              lineHeight: "$sm",
             },
           },
           _groupHSpacer: {
-            size: 'sm',
+            size: "$sm",
           },
           _groupVSpacer: {
-            size: 'sm',
+            size: "$sm",
           },
         },
         md: {
           _button: {
-            px: '$4',
-            py: '$2',
+            px: "$5",
+            h: "$10",
             _icon: {
-              h: 18,
-              w: 18,
+              h: "$4.5",
+              w: "$4.5",
             },
             _text: {
-              fontSize: '$md',
-              lineHeight: '$md',
+              fontSize: "$md",
+              lineHeight: "$md",
             },
           },
           _groupHSpacer: {
-            size: 'md',
+            size: "$md",
           },
           _groupVSpacer: {
-            size: 'md',
+            size: "$md",
           },
         },
         lg: {
           _button: {
-            px: '$5',
-            py: '$2',
+            px: "$6",
+            h: "$11",
             _icon: {
-              h: 18,
-              w: 18,
+              h: "$4.5",
+              w: "$4.5",
             },
             _text: {
-              fontSize: '$lg',
-              lineHeight: '$lg',
+              fontSize: "$lg",
+              lineHeight: "$xl",
             },
           },
           _groupHSpacer: {
-            size: 'lg',
+            size: "$lg",
           },
           _groupVSpacer: {
-            size: 'lg',
+            size: "$lg",
+          },
+        },
+        xl: {
+          _button: {
+            px: "$7",
+            h: "$12",
+            _icon: {
+              h: "$5",
+              w: "$5",
+            },
+            _text: {
+              fontSize: "$xl",
+              lineHeight: "$xl",
+            },
+          },
+          _groupHSpacer: {
+            size: "$xl",
+          },
+          _groupVSpacer: {
+            size: "$xl",
           },
         },
       },
     },
 
     defaultProps: {
-      size: 'md',
+      size: "md",
     },
   },
   {
-    descendantStyle: ['_button', '_groupHSpacer', '_groupVSpacer'],
+    descendantStyle: ["_button", "_groupHSpacer", "_groupVSpacer"],
   }
 );

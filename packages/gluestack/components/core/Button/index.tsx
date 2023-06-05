@@ -1,4 +1,4 @@
-import { createButton } from '@gluestack-ui/button';
+import { createButton } from "@gluestack-ui/button";
 import {
   Root,
   Text,
@@ -6,7 +6,8 @@ import {
   GroupHSpacer,
   GroupVSpacer,
   Spinner,
-} from './styled-components';
+  Icon,
+} from "./styled-components";
 
 export const Button = createButton({
   Root,
@@ -15,4 +16,5 @@ export const Button = createButton({
   GroupHSpacer,
   GroupVSpacer,
   Spinner,
+  Icon,
 });

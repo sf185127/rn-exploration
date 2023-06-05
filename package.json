@@ -6,5 +6,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach --no-private run build"
+  }
 }

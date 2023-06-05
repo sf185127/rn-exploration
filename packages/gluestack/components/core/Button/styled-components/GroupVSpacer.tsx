@@ -1,5 +1,5 @@
-import { styled } from '../../styled';
-import { View } from 'react-native';
+import { styled } from "../../styled";
+import { View } from "react-native";
 
 export default styled(
   View,
@@ -7,19 +7,22 @@ export default styled(
     variants: {
       space: {
         xs: {
-          h: 4,
+          h: "$1",
         },
         sm: {
-          h: 6,
+          h: "$1.5",
         },
         md: {
-          h: 8,
+          h: "$2",
         },
         lg: {
-          h: 8,
+          h: "$3",
+        },
+        xl: {
+          h: "$4",
         },
       },
     },
   },
-  { ancestorStyle: ['_groupVSpacer'] }
+  { ancestorStyle: ["_groupVSpacer"] }
 );

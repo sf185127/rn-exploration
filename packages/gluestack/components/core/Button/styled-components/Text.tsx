@@ -1,13 +1,13 @@
-import { Text } from 'react-native';
-import { styled } from '../../styled';
+import { Text } from "react-native";
+import { styled } from "../../styled";
 
 export default styled(
   Text,
   {
-    color: '$text800',
-    fontFamily: '$body',
+    color: "$textLight0",
+    fontFamily: "$body",
     //@ts-ignore
-    userSelect: 'none',
+    userSelect: "none",
   },
-  { ancestorStyle: ['_text'], DEBUG: 'STYLEDBUTTONTEXT' }
+  { ancestorStyle: ["_text"], DEBUG: "STYLEDBUTTONTEXT" }
 );

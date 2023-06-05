@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths(), dts()],
   build: {
     lib: {
-      name: "papar-ds-lib",
+      name: "elements-ds-lib",
       entry: {
         index: resolve(__dirname, "src/index.ts"),
       },
@@ -20,6 +20,7 @@ export default defineConfig({
         "react-native",
         "react-native-safe-area-context",
         "react-native-ratings",
+        "@expo/vector-icons",
       ],
     },
   },
