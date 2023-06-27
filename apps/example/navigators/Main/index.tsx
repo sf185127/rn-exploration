@@ -7,6 +7,7 @@ import {
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ElementsExampleScreen from "../../screens/ElementsExample";
 import HomeScreen from "../../screens/Home";
+import PaperExampleScreen from "../../screens/PaperExample";
 
 const screens = {
   HomeScreen: {
@@ -21,6 +22,13 @@ const screens = {
     params: {} as {} | undefined,
     options: {
       title: "Elements Example",
+    },
+  },
+  PaperExampleScreen: {
+    Component: PaperExampleScreen,
+    params: {} as {} | undefined,
+    options: {
+      title: "Paper Example",
     },
   },
 } as const;

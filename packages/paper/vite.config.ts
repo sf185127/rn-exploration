@@ -16,10 +16,10 @@ export default defineConfig({
     rollupOptions: {
       external: [
         "react",
+        "react-dom",
         "react/jsx-runtime",
-        "@react-navigation/native",
         "react-native",
-        /react-native-(?!paper).*/i,
+        "react-native-safe-area-context",
       ],
     },
   },

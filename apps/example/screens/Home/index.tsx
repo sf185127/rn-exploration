@@ -21,6 +21,8 @@ import { useMainStackNavigation } from "../../navigators/Main";
 //   Button as TamaguiButton,
 // } from "tamagui-ds-lib";
 // import { Button as RnuilibButton } from "rnuilib-ds-lib";
+import { Button as GluestackButton } from "gluestack-ds-lib";
+import { Button } from "tamagui-ds-lib";
 
 const rneTheme = createRneTheme({
   components: {
@@ -60,7 +62,13 @@ export default function HomeScreen() {
       <View style={{ marginVertical: 10 }}>
         <Text>react-native-paper</Text>
         <PaperThemeProvider>
-          <PaperButton>Test</PaperButton>
+          <PaperButton
+            onPressOut={() => {
+              console.log("END");
+            }}
+          >
+            Test
+          </PaperButton>
         </PaperThemeProvider>
       </View>
 
@@ -86,12 +94,11 @@ export default function HomeScreen() {
 
       <View style={{ marginVertical: 10 }}>
         <Text>tamagui</Text>
-        <Text>Needs more research</Text>
+        <Button>Test</Button>
       </View>
 
       <View style={{ marginVertical: 10 }}>
         <Text>gluestack-ui</Text>
-        <Text>Needs more research</Text>
       </View>
 
       <View style={{ marginVertical: 10 }}>

@@ -2,9 +2,10 @@
   "name": "paper-ds-lib",
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "react-native": "./dist/index.js",
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
@@ -17,10 +18,10 @@
     "react-native-safe-area-context": "*"
   },
   "devDependencies": {
-    "@types/react": "^18.2.8",
-    "@types/react-dom": "^18.2.4",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
     "@types/react-native": "^0.72.2",
-    "@vitejs/plugin-react": "^4.0.0",
+    "@vitejs/plugin-react": "^4.0.1",
     "react-native-paper": "^5.8.0",
     "tslib": "^2.5.3",
     "typescript": "^5.1.3",

@@ -1,11 +1,20 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
-import tsconfigPaths from "vite-tsconfig-paths";
+//import { tamaguiPlugin, tamaguiExtractPlugin } from "@tamagui/vite-plugin";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [react(), tsconfigPaths(), dts()],
+  plugins: [
+    react(),
+    // tamaguiPlugin({
+    //   config: "./src/tamagui.config.ts",
+    //   components: ["tamagui"],
+    // }),
+    // optional, adds the optimizing compiler:
+    //tamaguiExtractPlugin(tamaguiConfig),
+    dts(),
+  ],
   build: {
     lib: {
       name: "tamagui-ds-lib",
@@ -14,7 +23,7 @@ export default defineConfig({
       },
     },
     rollupOptions: {
-      external: ["react", "react-native", /react-native-.*/i, "react-dom"],
+      external: ["react", "react-native", "react-native-safe-area-context"],
     },
   },
 });

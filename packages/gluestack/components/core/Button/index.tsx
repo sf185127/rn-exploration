@@ -9,7 +9,7 @@ import {
   Icon,
 } from "./styled-components";
 
-export const Button = createButton({
+export const Button: any = createButton({
   Root,
   Text,
   Group,
