@@ -1,22 +1,38 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
+    "baseUrl": ".",
+    "rootDir": ".",
     "outDir": "dist",
-    "module": "esnext",
-    "lib": ["DOM", "ESNext", "DOM.Iterable"],
-    "skipLibCheck": true,
     "importHelpers": true,
-    "sourceMap": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-    "jsx": "react",
     "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "strict": true,
     "esModuleInterop": true,
-    "baseUrl": "src"
+    "inlineSourceMap": true,
+    "preserveSymlinks": true,
+    "jsx": "react-jsx",
+    "module": "system",
+    "moduleResolution": "node",
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveConstEnums": true,
+    // DONT DO THIS so jsdoc will remain
+    "removeComments": false,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "target": "es2020",
+    "types": ["node", "react"],
+    "lib": ["dom", "esnext"]
   },
-  "include": ["src"]
+  "exclude": ["node_modules", "dist", "types"],
+  "typeAcquisition": {
+    "enable": true
+  }
 }
