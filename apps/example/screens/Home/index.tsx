@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { ScrollView, Text, View } from "react-native";
+import { ScrollView, Text } from "react-native";
 import { useMainStackNavigation } from "../../navigators/Main";
 import { Box, Button, createTheme, NCRThemeProvider } from "tamagui-ds-lib";
 
@@ -18,14 +18,7 @@ export default function HomeScreen() {
           <Button>
             <Button.Text>Test</Button.Text>
           </Button>
-          <Button color={"destructive"}>
-            <Button.Text>Test</Button.Text>
-          </Button>
           <Button variant="outlined">
-            <Button.Text>Test</Button.Text>
-          </Button>
-          <Button variant="outlined" color="destructive" space={12}>
-            <Button.Text>Test</Button.Text>
             <Button.Text>Test</Button.Text>
           </Button>
         </Box>

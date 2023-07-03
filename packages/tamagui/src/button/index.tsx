@@ -7,3 +7,5 @@ export const Button = withStaticProperties(ButtonContainer, {
   Text: ButtonText,
   Icon: ButtonIcon,
 });
+
+export { ButtonText };

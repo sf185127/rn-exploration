@@ -2,7 +2,7 @@ import { styled, Text } from "@tamagui/core";
 import { ButtonContext } from "./context";
 
 const Component = styled(Text, {
-  name: "ButtonText",
+  name: "Button",
   context: ButtonContext,
 
   fontSize: 15,
@@ -11,6 +11,7 @@ const Component = styled(Text, {
   lineHeight: 26,
   letterSpacing: -0.093,
   flex: 1,
+  userSelect: "none",
 
   variants: {
     variant: {
@@ -29,17 +30,7 @@ const Component = styled(Text, {
       medium: {},
       large: {},
     },
-    color: {
-      primary: {},
-      secondary: {},
-      destructive: { color: "$error.main" },
-    },
   } as const,
-
-  defaultVariants: {
-    variant: "contained",
-    size: "medium",
-  },
 });
 
 export const ButtonText = Component.styleable((props, ref) => (

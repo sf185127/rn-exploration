@@ -2,7 +2,7 @@ import { styled, Stack } from "@tamagui/core";
 import { ButtonContext } from "./context";
 
 const Component = styled(Stack, {
-  name: "Button",
+  name: "ButtonContainer",
   context: ButtonContext,
   focusable: true,
   role: "button",
@@ -21,7 +21,9 @@ const Component = styled(Stack, {
     variant: {
       contained: {
         backgroundColor: "$primary.main",
-
+        hoverStyle: {
+          backgroundColor: "$primary.main-hover",
+        },
         pressStyle: {
           backgroundColor: "$primary.main-active",
         },
@@ -29,11 +31,9 @@ const Component = styled(Stack, {
       outlined: {
         backgroundColor: "transparent",
         borderColor: "$primary.border-on-empty",
-
         hoverStyle: {
-          backgroundColor: "$primary.empty-active",
+          backgroundColor: "$primary.empty-hover",
         },
-
         pressStyle: {
           backgroundColor: "$primary.empty-active",
         },
@@ -47,17 +47,6 @@ const Component = styled(Stack, {
       small: {},
       medium: {},
       large: {},
-    },
-    color: {
-      primary: {},
-      secondary: {},
-      destructive: {
-        backgroundColor: "$error.main",
-
-        pressStyle: {
-          backgroundColor: "$error.main-active",
-        },
-      },
     },
   } as const,
 
